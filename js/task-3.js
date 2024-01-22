@@ -1,8 +1,20 @@
+// function filterArray(numbers, value) {
+//   let array = [];
+//   for (let i = 0; i <= numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       array.push(numbers[i]);
+//     }
+//   }
+//   return array;
+// }
+
+// Побачив.що треба інший спосіб ітераціі по масиву, але перший теж залишу, що зря мучивсь, над цим індексом
+
 function filterArray(numbers, value) {
   let array = [];
-  for (let i = 0; i <= numbers.length; i += 1) {
-    if (numbers[i] > value) {
-      array.push(numbers[i]);
+  for (const number of numbers) {
+    if (number > value) {
+      array.push(number);
     }
   }
   return array;
